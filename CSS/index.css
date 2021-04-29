@@ -1,0 +1,468 @@
+/***************************************************************GLOBAL**************************************************************************************/
+
+body *{
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;  
+}
+
+body{
+    height: 100vh;
+    background: url(../image/background.jpg) no-repeat right center; /*APPLIQUER @MEDIA (BP A DEFINIR) PASSAGE DU BG EN BS: COVER*/
+    background-size: contain;
+    overflow: hidden;
+    background-color: black;
+}
+
+#global-header{
+    position: absolute;
+    top:0;
+    color:white;
+}
+
+#global-header a, #global-header p, #global-header a i{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5) !important;
+}
+
+#global-header a:hover, #global-header a i:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,1) !important;
+}
+
+#global-footer a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.2) !important;
+}
+
+#global-footer a:hover{
+    padding-left:2px;
+    padding-right:2px;
+    text-decoration: underline dotted  rgba(255,255,255,.8);
+    color: rgba(255,255,255,.8) !important;
+}
+
+.whitebuttons{
+    color:white !important;
+}
+
+.animated-text{
+    font-size: 1rem;
+    color: rgba(255,255,255,0.5);
+}
+
+#downloadbutton:hover{
+    background-color:#fff !important;
+    color: black !important;
+}
+
+#contactbutton:hover{
+    background-color:rgb(187,137,62,.8) !important;
+}
+
+/*******************************************************************MODAL-GLOBAL**************************************************************************************/
+
+#modal-header{
+    width:100%; 
+    background-color: white;
+}
+
+.modal-header a{
+    color: #BB893E !important;  
+}
+
+.modal-header a:hover{
+    color:rgba(0,0,0,.3)!important;
+}
+
+.title-globalsection{
+    display: inline-block;
+    position: relative;
+}
+
+
+/***************************************************************SECTION-MODAL-SUPERPOSITION-EFFECT**************************************************************************************/
+
+.superposition{
+    z-index: 0; /* Z INDEX A MODIFIER POUR APPARITION SUR MODAL */
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:-30px;
+    color: rgba(160,160,160,.1) !important;
+    font-size:75px;
+    font-weight: 500;
+    letter-spacing: 30px;
+    width: 100%;
+}
+
+#superposition{
+    z-index:2;
+}
+.line{   
+    background: #666;
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+}
+
+
+/***************************************************************RETURN-BUTTON**************************************************************************************/
+
+.center-con{      /* Z INDEX A MODIFIER POUR APPARITION SUR MODAL */
+    display:flex;
+    height: 10vh;
+}
+
+.round{
+    position:relative;
+    border: 3px solid #BB893E;
+    width:40px;
+    height:40px;
+    border-radius: 100%;
+}
+
+.modal-header span{
+    z-index: 999;
+    height: 3px;
+    margin: 1px;
+    width: 15px;
+    background-color:#BB893E;
+    transition: 0.4s ease;
+}
+
+.modal-header span:first-child {
+    display:block;
+    position:absolute;
+    transform: rotate(-45deg);
+    top:30%;
+    left: 15%;    
+}
+
+.modal-header span:nth-child(2){
+    display:block;
+    position:absolute;
+    transform: rotate(45deg);
+    top:55%;
+    left: 15%;
+}
+
+.round:hover span:nth-child(1){ 
+    transform:rotate(405deg);
+    position:absolute;
+    top:43%;
+    left:25%;
+}
+.round:hover span:nth-child(2){ 
+    transform:rotate(-405deg);
+    position:absolute;
+    top:43%;
+    left:25%;
+
+}
+
+
+/***************************************************************ABOUT-ME-SECTION**************************************************************************************/
+
+#section-1-aboutme{
+    padding-top: 10vh;
+}
+#section-1-aboutme h2{
+    text-transform: uppercase; 
+}
+#section-1-aboutme .about-me{
+    -moz-box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+    -o-box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+    box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+}
+
+#section-1-aboutme .about-me img{
+    object-fit: cover;
+    width:55%;
+}
+
+/***************************************************************ABOUT-ME-SECTION-ANIMATION-SECTION-2**************************************************************************************/
+
+#section-2-aboutme{
+    overflow: hidden;
+}
+@keyframes defilement-rtl{
+    0% {
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(-100%,0,0);
+    }
+}
+#section-2-aboutme .container #moving-text:first-child{
+    display:inline-block;
+    padding-right:2em;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: defilement-rtl 30s infinite linear;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/***************************************************************ABOUT-ME-SECTION-SECTION-3-HOBBIES**************************************************************************************/
+
+#carouselHobbies p, #carouselHobbies h5{
+    color:white;
+}
+
+.underimage{
+   
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 80%;
+    color: black;
+    width: 50%;
+}
+
+
+#section-4-aboutme .row{
+    -moz-box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+    -o-box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+    box-shadow: 10px 10px 5px 0px rgba(65,65,65,.1);
+}
+
+/***************************************************************ABOUT-ME-SECTION-4-SKILLBOX**************************************************************************************/
+
+#SkillBox {
+    font-size: 20px;
+    font-family: Arial, cursive;
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    background-color: rgba(187,137,62,.7);
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(255, 255, 255, .5);
+    margin: 20px auto;
+}
+
+#Skill-HTML {
+    width: 80%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(0,0,0,.4);
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 80%}
+}
+
+#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 60%;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 60%}
+}
+
+#Skill-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+}
+@keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}@-webkit-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}@-moz-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}@-o-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}
+
+#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-o-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}
+
+#Skill-PHP {
+    animation: Animate-PHP 4s;
+    -webkit-animation: Animate-PHP 4s;
+    -moz-animation: Animate-PHP 4s;
+    -o-animation: Animate-PHP 4s;
+    width: 20%;
+    height: 50px;
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+}
+@keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}@-webkit-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}@-moz-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}@-o-keyframes Animate-PHP {
+    from {
+    width: 10px;
+}
+to {
+    width: 20%}
+}
+
+.Skill-Area {
+    z-index: 1;
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-shadow: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 15px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
