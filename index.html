@@ -44,7 +44,7 @@
             </div>
         </header>
         <section>
-        <nav class='container'>
+        <nav class='container-fluid'>
             <div class="row">
                 <div class="menu">
                     <div class="item open-menu"><img src="image/lune.png" alt=""></div>
@@ -56,25 +56,28 @@
         </nav>
         </section>
         <section id='section-1-global'>
-            <div class="container">      
+            <div class="container-fluid">      
                 <div class="row">
                     <div class="col-12">
-                        <div class="d-flex flex-column flex-nowrap align-items-start">
+                        <div class="d-flex flex-column flex-nowrap align-items-start" id='presentation'>
                             <h1 class=''>Samuel RAPPY</h1>
-                            <h2 class='bg-dark'><span class='bg-white' id='presentation'>Concepteur</span> Développeur d'Applications</h2>
+                            <h2 class='mt-2'>
+                                <span class='bg-white' id='presentation'>Concepteur</span> 
+                                <span class='bg-dark'>Développeur d'Applications</span>    
+                            </h2>
                             <p class=''>Basé sur Bordeaux, Limoges et Brive-la-Gaillarde</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <hr style='width: 430px;'>
+                        <hr>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="mt-3">
-                        <button id='contactbutton' type='button'  data-bs-toggle='modal' data-bs-target='#contactme'>ME CONTACTER</button>
-                        <button id='downloadbutton' type='button' data-bs-toggle='modal' data-bs-target='#moncv'>TELECHARGER MON CV</button>
+                    <div class="buttons">
+                        <button id='contactbutton' class='btn' type='button'  data-bs-toggle='modal' data-bs-target='#contactme'>ME CONTACTER</button>
+                        <button id='downloadbutton' class='btn' type='button' data-bs-toggle='modal' data-bs-target='#moncv'>TELECHARGER MON CV</button>
                     </div>
                 </div> 
             </div>
