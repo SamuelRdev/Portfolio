@@ -10,10 +10,11 @@
         <script src='js/animated-text.js'></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    </head>
     <body>
         <header id='global-header'>
-            <div class="container child p-0">
+            <div class="container-fluid pe-5 ps-5">
                 <div class="row child d-flex flex-row pe-4 ps-4 pt-3" style='--bs-gutter-x: 0rem;'>
                     <div class="col-md-12 d-flex flex-row justify-content-end align-items-center">
                         <a href="#" class='ms-1'>EN</a> 
@@ -86,19 +87,15 @@
         <div class="modal fade" id="aboutmemodal" tabindex="-1" aria-labelledby="aboutmemodalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
-
                     <div class="modal-header">
-                        <div class="container child">
-            
-                            <div id='modal-header' class="row child d-flex flex-nowrap">
-
+                        <div class="container">
+                            <div id='modal-header' class="row d-flex flex-nowrap">
                                 <div class="center-con col-6 d-flex align-items-center">
                                     <div type="button" class="round" data-bs-dismiss="modal" aria-label="Close">
                                         <span></span>
                                         <span></span>
                                     </div>
                                 </div>
-
                                 <div class="col-6 child-h d-flex align-items-center justify-content-end">
                                     <a href="https://www.linkedin.com/in/samuel-rappy-224599203/" target='_blank' class='ms-5'><i class="fab fa-linkedin-in"></i></a>
                                     <a href="https://github.com/SamuelV2C" target='_blank' class='ms-5'><i class="fab fa-github"></i></a>
@@ -107,35 +104,33 @@
                             </div>
                         </div>    
                     </div>
-                        
-
                     <div class="modal-body">
+                    <header>
+                        <div class="container">     
+                            <div class="row text-center">
+                                <div class="title-globalsection">
+                                    <h2 class='modal-title' id='aboutmemodalLabel'> <!--modal-title et id a retirer peut-être-->
+                                        <p class='modal-title-title'>A propos de moi</p> 
+                                        <span class='superposition'>Qui suis-je ?</span>  
+                                    </h2>
+                                </div>    
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </header>    
                         <section id="section-1-aboutme">
                             <div class="container">
-                                <div class="row text-center">
-                                    <div class="title-globalsection">
-                                        <h2 class='modal-title' id='aboutmemodalLabel'> <!--modal-title et id a retirer peut-être-->
-                                            <p>A propos de moi</p> 
-                                            <span class='superposition'>Qui suis-je ?</span>  
-                                        </h2>
-                                    </div>    
-                                    
-                                    <div class="line"></div>
-                                </div>
-
-                                <div class="row p-5">
-
-                                    <div class="about-me d-flex align-items-center justify-content-around p-5">
-                                        <div class="col-md-6 d-flex flex-column">
-                                            <h1 class='fs-1' style='text-transform:uppercase;'>Samuel RAPPY</h1>
-                                            <h2 class='fs-4 mt-4 fw-normal' style="text-transform: none;">Concepteur Développeur d'Applications</h2>
-                                            <p class='mt-2' style='font-size: 0.9rem;'>Basé sur Bordeaux, Limoges et Brive-la-Gaillarde</p>
+                                <div class="row">
+                                    <div class="about-me d-flex align-items-center justify-content-around">
+                                        <div class="col-md-6 d-flex flex-column" id='aboutme-text'>
+                                            <h1 class='' style='text-transform:uppercase;'>Samuel RAPPY</h1>
+                                            <h2 class='' style="text-transform: none;">Concepteur Développeur d'Applications</h2>
+                                            <p class='' style='font-size: 0.9rem;'>Basé sur Bordeaux, Limoges et Brive-la-Gaillarde</p>
                                         </div>
                                         <div class="col-md-6 photo-right text-center py-4">
                                             <img class='' src="../image/pro.jpg" alt="" >
                                         </div>
-                                    </div>
-                                    
+                                    </div>  
                                 </div>
                             </div>
                         </section>
