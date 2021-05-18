@@ -2,21 +2,22 @@
 
 body *{
     box-sizing: border-box;
-    font-family: 'Cinzel', serif;  
+    font-family: 'Cinzel', serif; 
+    font-size: 14px;
+    position: relative;
 }
 
 body{
-    height: 100vh;
-    background: url(../image/background.jpg) no-repeat right center; /*APPLIQUER @MEDIA (BP A DEFINIR) PASSAGE DU BG EN BS: COVER*/
-    background-size: contain;
-    overflow: hidden;
+    background: no-repeat center center url(../image/background.jpg); /*APPLIQUER @MEDIA (BP A DEFINIR) PASSAGE DU BG EN BS: COVER*/
+    background-size: cover;
     background-color: black;
+    color: white;
+    height: 100vh;
 }
 
 #global-header{
-    position: absolute;
-    top:0;
     color:white;
+    width: 100%;
 }
 
 #global-header a, #global-header p, #global-header a i{
@@ -41,23 +42,70 @@ body{
     color: rgba(255,255,255,.8) !important;
 }
 
-.whitebuttons{
-    color:white !important;
-}
 
-.animated-text{
-    font-size: 1rem;
+.animated-text, .animated-text span{
+    font-size: 10px;
     color: rgba(255,255,255,0.5);
 }
 
+/*.whitebuttons{
+    color:white ;
+}
+
 #downloadbutton:hover{
-    background-color:#fff !important;
-    color: black !important;
+    background-color:#fff;
+    color: black ;
 }
 
 #contactbutton:hover{
     background-color:rgb(187,137,62,.8) !important;
+}*/
+
+
+/********************************************************************MENU-GOEEY***************************************************************************************/
+
+.menu img{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
 }
+
+.menu{
+    position:relative;
+    width: 80px;
+    height: 80px;
+}
+
+.menu .item{
+   position: absolute;
+   top: 0px;
+   left:10px;
+   width: 80px;
+   height: 80px;
+   line-height: 80px;
+   border-radius: 50%;
+   transition: transform 600ms ease-out ;
+   cursor: pointer;
+}
+
+.item .open-menu{
+    z-index: 1;
+    transition: transform 300ms ease-out;
+    transition-delay: 300ms;
+}
+
+.opened .item:nth-child(2){ transform: translateX(125px) translateY(75px); }
+.opened .item:nth-child(3){ transform: translateX(125px) translateY(-75px); }
+.opened .item:nth-child(4){ transform: translateX(0px); }
+
+.opened .item.open-menu{
+    transform:scale(0);
+}
+
+.item:nth-child(2){ transition-delay: 50ms ;}
+.item:nth-child(3){ transition-delay: 75ms ;}
+.item:nth-child(4){ transition-delay: 0ms;}
+
 
 /*******************************************************************MODAL-GLOBAL**************************************************************************************/
 
@@ -78,8 +126,23 @@ body{
     display: inline-block;
     position: relative;
 }
+/*****************************************************************SECTION-1-GLOBALE******************************************************************************************************/
+#section-1-global{
+    margin-top: 8rem;
+}
 
+#section-1-global h1{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
 
+#section-1-global h2{
+    font-size: 1.2em;
+}
+
+#section-1-global h2 span{
+    color:#000;
+}
 /***************************************************************SECTION-MODAL-SUPERPOSITION-EFFECT**************************************************************************************/
 
 .superposition{
@@ -466,3 +529,63 @@ to {
     font-size: 18px;
 }
 
+@media screen and (min-width:400px){   
+
+    .animated-text, .animated-text span{
+        font-size: 12px; 
+    }
+}
+
+@media screen and (min-width:800px){   
+
+    body *{
+        font-size: 16px;
+    }
+
+    .animated-text, .animated-text span{
+        font-size: 16px;
+    }
+    
+    .menu img{
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+    }
+
+    .menu{
+        position:relative;
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu .item{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    border-radius: 50%;
+    transition: transform 600ms ease-out ;
+    cursor: pointer;
+    }
+
+    .item .open-menu{
+        z-index: 1;
+        transition: transform 300ms ease-out;
+        transition-delay: 300ms;
+    }
+
+    .opened .item:nth-child(2){ transform: translateX(290px); }
+    .opened .item:nth-child(3){ transform: translateX(150px); }
+    .opened .item:nth-child(4){ transform: translateX(0px); }
+
+    .opened .item.open-menu{
+        transform:scale(0);
+    }
+
+    .item:nth-child(2){ transition-delay: 50ms ;}
+    .item:nth-child(3){ transition-delay: 75ms ;}
+    .item:nth-child(4){ transition-delay: 0ms;
+    }
+}
