@@ -241,7 +241,7 @@ body{
     left: 10px;
     right: 0;
     top: 10px;
-    color: rgba(160,160,160,.1) !important;
+    color: rgba(160,160,160,.2) !important;
     font-size:1.8em;
     font-weight: 500;
     letter-spacing: 13px;
@@ -249,6 +249,7 @@ body{
     font-family: 'sans serif';
     text-transform: uppercase;
 }
+
 
 .modal-title{
     min-width: 300px;
@@ -267,6 +268,9 @@ body{
     margin: 1px auto;
 }
 
+#portfolio_superposition{
+    margin-top:-16px;
+}
 
 /***************************************************************RETURN-BUTTON**************************************************************************************/
 
@@ -711,7 +715,8 @@ to {
     z-index: 3;
     position: relative;
     padding-left: 15px;
-    margin-top: 5px;
+    padding-right: 5px;
+    margin-top: 4px;
     float: right;
     text-shadow: none;
     color: #fff;
@@ -1043,6 +1048,10 @@ to {
     #SkillBox{
        margin-top: 1.78em;
        margin-bottom: 3.78em;  
+    }
+    
+    #portfolio_superposition{
+        margin-top:-15px;
     }
 
     

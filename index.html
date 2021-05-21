@@ -11,7 +11,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="testpage.css">      
     </head>
+    
     <body>
         <header id='global-header'>
             <div class="container-fluid pe-5 ps-5">
@@ -44,8 +46,8 @@
                 </div>
             </div>
         </header>
-        <section>
-        <nav class='container-fluid'>
+        <section id='Navigation_gooey'>
+            <nav class='container-fluid'>
             <div class="row">
                 <div class="menu">
                     <div class="item open-menu"><img src="image/lune.png" alt=""></div>
@@ -54,7 +56,7 @@
                     <div class="item close-menu"><img src="image/lune.png" alt=""></div>
                 </div> 
             </div>
-        </nav>
+            </nav>
         </section>
         <section id='section-1-global'>
             <div class="container-fluid">      
@@ -108,7 +110,7 @@
                         <header>
                             <div class="container">     
                                 <div class="row">
-                                    <div class="title-globalsection">
+                                    <div class=" col-12 title-globalsection">
                                         <h2 class='modal-title' id='aboutmemodalLabel'> <!--modal-title et id a retirer peut-être-->
                                             <p class='modal-title-title text-center'>A propos de moi</p> 
                                             <span class='superposition text-center'>Qui suis-je ?</span>  
@@ -228,7 +230,6 @@
         <div class="modal fade" id="myportefolio" tabindex="-1" aria-labelledby='myportefolioLabel' aria-hidden='true'>
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content">
-
                     <div class="modal-header">
                         <div class="container child">
                 
@@ -250,28 +251,88 @@
                             </div>    
                         </div>
                     </div>
-
                     <div class="modal-body">
-                        <div class="conrainer">
-                            <div class="row">
-                                <p>Les quiches sont chaudes</p>
+                        <div class="section-animate animate">
+                            <div class="middle">
+                            <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                            <div class="left title title1">
+                            <div class="content">
+                                <h2>Bienvenu sur mon portfolio</h2>
+                                <p>Vous pouvez trouver ici quelques-uns de mes projets.</p>
+                                <a href="https://github.com/" target='_blank' class="btn-primary">Github</a>
+                            </div>
+                            </div>
+                            <div class="right tiles">
+                            <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1460400408855-36abd76648b9?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                        </div>
+                        
+                        <div class="section-animate">
+                            <div class="middle">
+                            <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                            <div class="right title title2">
+                            <div class="content">
+                                <h2>L'Exemple</h2>
+                                <p>Un site de restaurant fictif</p>
+                                <a href="#" class="btn-primary">Github</a>
+                            </div>
+                            </div>
+                            
+                            <div class="left tiles">
+                            <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1464655646192-3cb2ace7a67e?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="section-animate">
+                            <div class="middle">
+                            <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                            <div class="left title title3">
+                            <div class="content">
+                                <h2>Autre chose</h2>
+                                <p>Autre chose</p>
+                                <a href="#" class="btn-primary">Github</a>
+                            </div>
+                            </div>
+                            
+                            <div class="right tiles">
+                            <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1465326117523-6450112b60b2?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="section-animate">
+                            <div class="middle">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            </div>
+                            <div class="right title title4">
+                            <div class="content">
+                                <h2>Autre chose</h2>
+                                <p>Autre chose</p>
+                                <a href="#" class="btn-primary">Github</a>
+                            </div>
+                            </div>
+                            
+                            <div class="left tiles">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?dpr=2&auto=format&crop=entropy&fit=crop&w=250&h=250&q=80" />
                             </div>
                         </div>
                     </div>
-
-                    <div class="modal-footer">
-                        <div class="container">
-                            <div class="row d-flex align-items-end flex-row">
-                                <div class="col-md-4 text-start">
-                                    <p class='m-0 p-0'>2021 © Made with ❤ by Samuel RAPPY</p>
-                                </div>
-                                <div class="col-md-8 text-start">
-                                    <a href="../index.html" class=''>www.samuelrappy.fr</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -304,7 +365,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h3 class='text-center fs-5 mt-2'>ME CONTACTER</h3>
+                                    <h2 class='text-center fs-5 mt-2'>ME CONTACTER</h3>
                                     <div class="line"></div>
                                 </div>
                             </div>
@@ -362,6 +423,8 @@
             <a class='pb-2' href="#">www.samuelrappy.fr</a>
         </footer>
 
+        <script src="js/testpage.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src='js/toggle-menu.js'></script>
         <script src='js/modal.js'></script>
         <script src='js/carousel.js'></script>
