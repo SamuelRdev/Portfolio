@@ -1048,7 +1048,7 @@ to {
         margin-left: 4rem;
         
     }
-    
+       
     #section-1-global hr{
         width: 480px;
     }
@@ -1219,6 +1219,18 @@ to {
         font-size: .8em;
  
     } 
+
+    #section-2-aboutme{
+        margin-top: 6em;
+    }
+
+    #section-3-slider{
+        margin-top: 6em;
+    }
+
+    #section-4-aboutme{
+        margin-top: 13em;
+    }
 }
 
 
