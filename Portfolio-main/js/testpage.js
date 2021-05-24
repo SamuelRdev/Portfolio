@@ -5,7 +5,7 @@ $(document).ready(function(){
  
     function resizeThis() {
        $imgH = $('.middle img').width();
-       if ($(window).width() >= $sm) {
+       if ($('#modal-body-script').width() >= $sm) {
           $('.left,.right,.section-animate').css('height', $imgH);
        } else {
           $('.left,.right,.section-animate').css('height', 'auto');
@@ -14,17 +14,17 @@ $(document).ready(function(){
  
     resizeThis();
  
-    $(window).resize(function(){
+    $('#modal-body-script').resize(function(){
        resizeThis();
     });
  
-    $(window).scroll(function() {
+    $('#modal-body-script').scroll(function() {
        $('.section-animate').each(function(){
           var $elementPos = $(this).offset().top;
-          var $scrollPos = $(window).scrollTop();
+          var $scrollPos = $('#modal-body-script').scrollTop();
  
           var $sectionH = $(this).height();
-          var $h = $(window).height();
+          var $h = $('#modal-body-script').height();
           var $sectionVert = (($h/2)-($sectionH/4));
  
  
