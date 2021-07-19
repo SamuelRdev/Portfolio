@@ -601,12 +601,12 @@ to {
     width: 60%}
 }
 
-#Skill-jQuery {
+#Skill-SYMFONY {
     animation: Animate-jQuery 5s;
     -webkit-animation: Animate-jQuery 5s;
     -moz-animation: Animate-jQuery 5s;
     -o-animation: Animate-jQuery 5s;
-    width: 40%;
+    width: 60%;
     height: 30px;
     position: absolute;
     background-color: rgba(0,0,0,1);
@@ -616,25 +616,25 @@ to {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }@-webkit-keyframes Animate-jQuery {
     from {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }@-moz-keyframes Animate-jQuery {
     from {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }@-o-keyframes Animate-jQuery {
     from {
     width: 10px;
 }
 to {
-    width: 40%}
+    width: 60%}
 }
 
 #Skill-JS {
